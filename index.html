@@ -26,8 +26,67 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+      #footer{
+    background-color: #212121;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    line-height: 50px;
+    color: #aaa;
+    text-align: center;
+    width: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ body {
+  background-color: #87CEFA;
+}
+
+#container {
+  color: #333;
+  text-align: center;
+}
+
+#container h1 {
+  font-weight: normal;
+}
+
+#container li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#container li span {
+  display: block;
+  font-size: 4.5rem;
+}
   
     </style>
+    <script>
+      const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('Oct 18, 2019 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      }, second)
+    </script>
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -58,7 +117,7 @@
           <div class="col-6">
             <p class="mb-0 float-right">
               <span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">(+91) XXXXXXXXXX</span></a></span>
-              <span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">abcofficial@gmail.com</span></a></span>
+              <span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">m.me/magiciansoftheafterdark</span></a></span>
             </p>
             
           </div>
@@ -115,75 +174,17 @@
         </div>
       </div>
     </div>  
-<!--Contact Form-->
-<div class="site-section bg-light" id="contact-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-12 text-center">
-          <h3 class="section-sub-title">Contact Form</h3>
-          <h2 class="section-title mb-3">Get In Touch</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-7 mb-5">
-
-          
-
-          <form action="#" class="p-5 bg-white">
-            
-            <h2 class="h4 text-black mb-5">Contact Form</h2> 
-
-            <div class="row form-group">
-              <div class="col-md-6 mb-3 mb-md-0">
-                <label class="text-black" for="fname">First Name</label>
-                <input type="text" id="fname" class="form-control rounded-0">
-              </div>
-              <div class="col-md-6">
-                <label class="text-black" for="lname">Last Name</label>
-                <input type="text" id="lname" class="form-control rounded-0">
-              </div>
-            </div>
-
-            <div class="row form-group">
-              
-              <div class="col-md-12">
-                <label class="text-black" for="email">Email</label> 
-                <input type="email" id="email" class="form-control rounded-0">
-              </div>
-            </div>
-
-            <div class="row form-group">
-              
-              <div class="col-md-12">
-                <label class="text-black" for="subject">Phone Number</label> 
-                <input type="subject" id="subject" class="form-control rounded-0">
-              </div>
-            </div>
-
-            <div class="row form-group">
-              <div >
-                <label class="text-black" for="message">Message</label> 
-                <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Write your notes or questions here..."></textarea>
-              </div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-md-12">
-                <input type="submit" value="Send Message" class="btn btn-black rounded-0 py-3 px-4">
-              </div>
-            </div>
-
-
-          </form>
-        </div>
-      
-      </div>
-      
-    </div>
-  </div>
     
+<div id="container">
+  <h1 id="head">COUNTDOWN TO TECHNITES</h1>
+  <ul>
+    <li><span id="days"></span>days</li>
+    <li><span id="hours"></span>Hours</li>
+    <li><span id="minutes"></span>Minutes</li>
+    <li><span id="seconds"></span>Seconds</li>
+  </ul>
+</div>
 
-  
     <footer class="site-footer bg-white">
       <div class="container">
         <div class="row">
@@ -191,14 +192,14 @@
             <div class="row">
               <div class="col-md-5">
                 <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <p>Technites is a Sci-tech innovation event, of the annual fest of NITK , ENGINEER.</p>
               </div>
               <div class="col-md-3 ">
                 <h2 class="footer-heading mb-4">Quick Links</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">Magics</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="computer-science.html">Computer Science</a></li>
+                  <li><a href="electronics.html">Electronics</a></li>
+                  <li><a href="mechanical.html">Mechanical</a></li>
                  
                 </ul>
               </div>
@@ -212,7 +213,9 @@
           </div>
          
         
-      </div>
+    <div id="footer">
+    @ 2019 Copyright by Karn Tiwari and Vivesh Kumar
+    </div>
     </footer>
 
   </div>
