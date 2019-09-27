@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Technites</title>
+    <title>About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -25,106 +25,12 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-      #footer{
-    background-color: #212121;
-    height: 60px;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    line-height: 50px;
-    color: #aaa;
-    text-align: center;
-    width: 100%;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
- body {
-  background-color: #87CEFA;
-}
-
-#container {
-  color: #333;
-  text-align: center;
-}
-
-#container h1 {
-  font-weight: normal;
-}
-
-#container li {
-  display: inline-block;
-  font-size: 1.5em;
-  list-style-type: none;
-  padding: 1em;
-  text-transform: uppercase;
-}
-
-#container li span {
-  display: block;
-  font-size: 4.5rem;
-}
-  
-    </style>
-    <script>
-      const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
-
-let countDown = new Date('Oct 18, 2019 00:00:00').getTime(),
-    x = setInterval(function() {
-
-      let now = new Date().getTime(),
-          distance = countDown - now;
-
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-      }, second)
-    </script>
+   
+    
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-   
-    <div class="top-bar py-3 bg-light" id="home-section">
-      <div class="container">
-        <div class="row align-items-center">
-         
-          <div class="col-6 text-left">
-            <ul class="social-media">
-              
-              <li><a href="#" class=""><span class="icon-facebook"></span></a></li>
-            
-              <li><a href="#" class=""><span class="icon-linkedin"></span></a></li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <p class="mb-0 float-right">
-              <span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">(+91) XXXXXXXXXX</span></a></span>
-              <span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">m.me/magiciansoftheafterdark</span></a></span>
-            </p>
-            
-          </div>
-        </div>
-      </div> 
-    </div> 
-     
+  <!--Navigation Bar-->   
     <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
@@ -156,69 +62,60 @@ let countDown = new Date('Oct 18, 2019 00:00:00').getTime(),
       
     </header>
 
-  
-     
-    <div class="site-blocks-cover overlay" style="background-image: url(images/bg.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
+<!--Home-->
 
-          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
-                        
-            <div class="row mb-4">
-              <div class="col-md-7">
-                <h1>Technites</h1>
-                <p class="mb-5 lead">Magicians of the after dark..</p>
-              </div>
-            </div>
+   
+<div class="site-blocks-cover overlay" style="background-image: url(images/bg.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+
+      <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+                    
+        <div class="row mb-4">
+          <div class="col-md-7">
+            <h1>Technites</h1>
+            <p class="mb-5 lead">Magicians of the after dark..</p>
           </div>
         </div>
       </div>
-    </div>  
-    
-<div id="container">
-  <h1 id="head">COUNTDOWN TO TECHNITES</h1>
-  <ul>
-    <li><span id="days"></span>days</li>
-    <li><span id="hours"></span>Hours</li>
-    <li><span id="minutes"></span>Minutes</li>
-    <li><span id="seconds"></span>Seconds</li>
-  </ul>
-</div>
-
-    <footer class="site-footer bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-5">
-                <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Technites is a Sci-tech innovation event, of the annual fest of NITK , ENGINEER.</p>
-              </div>
-              <div class="col-md-3 ">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="computer-science.html">Computer Science</a></li>
-                  <li><a href="electronics.html">Electronics</a></li>
-                  <li><a href="mechanical.html">Mechanical</a></li>
-                 
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
-            </div>
-          </div>
-         
-        
-    <div id="footer">
-    @ 2019 Copyright by Karn Tiwari and Vivesh Kumar
     </div>
-    </footer>
-
   </div>
+</div>  
+
+
+<!--Footer-->
+   
+<footer class="site-footer bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="footer-heading mb-4">About Us</h2>
+            <p>Technites is a Sci-tech innovation event, of the annual fest of NITK , ENGINEER.</p>
+          </div>
+          <div class="col-md-3 ">
+            <h2 class="footer-heading mb-4">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="computer-science.html">Computer Science</a></li>
+              <li><a href="electronics.html">Electronics</a></li>
+              <li><a href="mechanical.html">Mechanical</a></li>
+             
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Follow Us</h2>
+            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+            
+            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+     
+    
+  </div>
+  
+</footer>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
